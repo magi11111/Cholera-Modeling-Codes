@@ -1,11 +1,3 @@
-%
-% Cholera Model - Time Delay Analysis Part 1
-% Author: Magdoleen Saad
-% Purpose: Solve cholera model with time delay using dde23
-%
-% The time delay represents the incubation period
-%
-
 
 
 lags =3;
