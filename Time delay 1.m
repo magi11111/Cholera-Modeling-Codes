@@ -1,14 +1,13 @@
-%
-% Cholera Model - Time Delay Analysis Part 1
-% Author: Magdoleen Saad
-% Purpose: Solve cholera model with time delay using dde23
-%
-% The time delay represents the incubation period
-% (time between exposure and becoming infectious)
-%
-% This script solves the delayed differential equations (DDEs)
-% and plots the results for Susceptible, Infected, Recovered, and Bacteria
-%
+"""
+Cholera Model - Parameter Estimation
+Author: Magdoleen Saad
+Purpose: Estimate alpha and beta from real outbreak data
+
+Method: Non-linear least squares (scipy.optimize.fmin)
+Input: Time series of infected cases
+Output: alpha_fit, eta_fit
+"""
+
 
 lags=2.5;%1.261143044;
 
