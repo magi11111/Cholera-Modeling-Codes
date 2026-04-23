@@ -1,25 +1,15 @@
 
-Cholera Model - Parameter Estimation (Alpha & Beta)
+"""
+Cholera Model - Parameter Estimation
 Author: Magdoleen Saad
-Purpose: Estimate transmission parameters from real outbreak data
+Purpose: Estimate alpha and beta from real outbreak data
 
-Model: SEIRB (Susceptible-Exposed-Infected-Recovered-Bacteria)
-Estimated parameters:
-- alpha: person-to-person transmission rate
-- eta: waterborne transmission rate
+Method: Non-linear least squares (scipy.optimize.fmin)
+Input: Time series of infected cases
+Output: alpha_fit, eta_fit
+"""
 
-Fixed parameters from literature:
-- gamma = 1/1.4 (progression rate)
-- gamma_1 = 1/5 (recovery rate)
-- zeta_1 = 10 (bacterial shedding)
-- zeta = 0.33 (bacterial decay)
-- k = 1,000,000 (half-saturation constant)
 
-Data: 10 time points (days 25, 43-51) with infected counts from 1 to 3826
-
-Method: Non-linear least squares optimization (scipy.optimize.fmin)
-
-Output: Estimated alpha, eta + plot comparing model vs real data
 
 
 import matplotlib.pyplot as plt
