@@ -1,3 +1,13 @@
+%
+% Cholera Model - Time Delay Analysis Part 2
+% Author: Magdoleen Saad
+% Purpose: Compare epidemic outcomes with different delay durations
+%
+% This script explores how delay length affects:
+% - Peak infected population
+% - Time to peak
+% - Overall epidemic size
+
 
 lags =3;
    %0.001; %0.145624740;
