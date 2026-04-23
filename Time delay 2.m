@@ -1,12 +1,11 @@
 %
-% Cholera Model - Time Delay Analysis Part 2
+% Cholera Model - Time Delay Analysis Part 1
 % Author: Magdoleen Saad
-% Purpose: Compare epidemic outcomes with different delay durations
+% Purpose: Solve cholera model with time delay using dde23
 %
-% This script explores how delay length affects:
-% - Peak infected population
-% - Time to peak
-% - Overall epidemic size
+% The time delay represents the incubation period
+%
+
 
 
 lags =3;
