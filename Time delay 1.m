@@ -1,3 +1,14 @@
+%
+% Cholera Model - Time Delay Analysis Part 1
+% Author: Magdoleen Saad
+% Purpose: Analyze the effect of time delays on cholera epidemic dynamics
+%
+% Time delay represents:
+% - Time between infection and symptom onset
+% - Time between bacteria ingestion and shedding
+% - Delay in intervention implementation
+%
+
 
 lags=2.5;%1.261143044;
 
