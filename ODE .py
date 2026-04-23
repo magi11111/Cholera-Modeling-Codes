@@ -1,23 +1,23 @@
-
+"""
 Cholera Model - ODE Solver (SEIRB)
 Author: Magdoleen Saad
 Purpose: Solve the differential equations of the cholera model
 
-Model equations (SEIRB):
+Compartments:
+S = Susceptible  |  E = Exposed  |  I = Infected  |  R = Recovered  |  B = Bacteria
+
+Main equations:
 dS/dt = Lambda - eta*(S*B^2/(k+B^2)) - alpha*S*I + rho*R - mu*S
 dE/dt = eta*(S*B^2/(k+B^2)) + alpha*S*I - (gamma+mu)*E
 dI/dt = (gamma+mu)*E - (gamma_1+mu+d)*I
 dR/dt = gamma_1*I - (mu+rho)*R
 dB/dt = zeta_1*I - zeta*B
 
-Compartments:
-S = Susceptible  |  E = Exposed  |  I = Infected  |  R = Recovered  |  B = Bacteria
-
-Parameters:
+Key parameters:
 alpha = direct transmission  |  eta = environmental transmission
 gamma = progression rate     |  gamma_1 = recovery rate
 zeta_1 = bacterial shedding  |  zeta = bacterial decay
-k = half-saturation constant |  mu = mortality rate
+"""
 
 
 from scipy.integrate import odeint
