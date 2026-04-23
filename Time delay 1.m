@@ -1,14 +1,14 @@
 %
 % Cholera Model - Time Delay Analysis Part 1
 % Author: Magdoleen Saad
-% Purpose: Analyze the effect of time delays on cholera epidemic dynamics
+% Purpose: Solve cholera model with time delay using dde23
 %
-% Time delay represents:
-% - Time between infection and symptom onset
-% - Time between bacteria ingestion and shedding
-% - Delay in intervention implementation
+% The time delay represents the incubation period
+% (time between exposure and becoming infectious)
 %
-
+% This script solves the delayed differential equations (DDEs)
+% and plots the results for Susceptible, Infected, Recovered, and Bacteria
+%
 
 lags=2.5;%1.261143044;
 
